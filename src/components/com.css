@@ -1,0 +1,265 @@
+/* com.css */
+
+/* Remove default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+   
+  }  
+ 
+  
+  /* Remove default link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    background-color: rgb(106, 102, 96);
+    color: aliceblue;
+    height: 60px; 
+    padding: 4px;
+
+  }
+  
+  .child-elements {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  .child-elements li {
+    margin-right: 20px;
+  }
+  
+  /* Add hover styles */
+  .hover:text-gray-300:hover {
+    color: #d1d5db; /* Gray (#d1d5db) color on hover */
+  }  
+  .box-elements{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  } 
+  .logout-card{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 10px; 
+    align-items: center;
+  } 
+  .card-background-image{
+    background-image: url("https://assets.ccbp.in/frontend/hooks/credit-card-bg.png"); 
+    width:400px; 
+    height: 200px; 
+    border-radius: 12px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  } 
+  .card-input-containers{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding:20px; 
+    margin: 10px;
+    width: 400px;  
+    height: 200px;
+    background-color: rgb(202, 238, 253); 
+    border-radius: 12px;
+  } 
+  .credit-card-main-container{
+    display: flex;  
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+  } 
+  .notes-card-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    width:600px; 
+    height: 400px; 
+    box-shadow: 0px 8px 2px #cbcdd0;
+  }
+  @media screen and (min-width:735px){ 
+    .burger-card-icon{
+      display: none;
+    } 
+    .nav-card-container {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content:space-between;
+     
+    }
+    
+  } 
+  @media screen and (max-width:735px){
+    .child-elements {
+      display: none;
+    } 
+   
+  }
+  .login-card-container{
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: aquamarine;  
+    /* background-position: none;  */
+    background-size: cover;  
+    width: 100vw; 
+    height: 100vh;
+    
+  } 
+  .login-form-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch; 
+    box-shadow: 0px 2px 10px rgb(130, 128, 128); 
+    background-color: aliceblue ; 
+    padding: 40px; 
+    border-radius: 10px;
+        
+  }  
+
+  .reg-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: aquamarine;  
+    /* background-position: none;  */
+    background-size: cover; 
+    overflow-y: block; 
+    width: 100vw; 
+    height: 100vh;
+  }  
+  .reg-form-car-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    box-shadow: 0px 2px 10px rgb(130, 128, 128); 
+    background-color: aliceblue ; 
+    padding: 40px; 
+    border-radius: 10px;
+  } 
+  
+  /* .table-card-container{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }  */
+
+  .table-card-container {
+    width: 80%;
+    margin: 20px auto;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    /* background-color: #fff; */
+    padding: 20px;
+  }
+  
+  .table-card-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-card-container th,
+  .table-card-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black; /* Adds a black line below each row */ 
+    
+  }
+  
+  .table-card-container th {
+    /* background-color: #f2f2f2; */
+    border-bottom: 2px solid black;  
+    border-left: 2px solid black;  /* Adds a thicker black line below the header */
+    border-right: 2px solid black;  /* Adds a thicker black line below the header */
+    border-top: 2px solid black;  /* Adds a thicker black line below the header */
+    
+  }
+  .table-card-container td {
+    border-left: 2px solid black;  /* Adds a thicker black line below the header */
+    border-right: 2px solid black;  /* Adds a thicker black line below the header */
+    
+  }
+  
+  .table-card-container input[type="text"],
+  .table-card-container input[type="number"],
+  .table-card-container button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .table-card-container form {
+    margin-bottom: 20px;
+  }
+  
+  .App {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-list li.completed span {
+    text-decoration: line-through;
+  }
+  
+  .todo-list li div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-list li input[type='checkbox'] {
+    margin-right: 10px;
+  }
+  
